@@ -19,5 +19,7 @@ get '/interesting' do
 end
 
 get '/picture' do
+  @header = ["The Originals", "Carrie Fisher", "Mark Hamill", "Harrison Ford"].sample
   erb :image
+
 end
