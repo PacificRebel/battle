@@ -18,8 +18,13 @@ get '/interesting' do
   "They killed off the Obi Wan origins story. Cuz no-one wanted to see it."
 end
 
-get '/picture' do
+get '/random-picture' do
   @header = ["The Originals", "Carrie Fisher", "Mark Hamill", "Harrison Ford"].sample
   erb :image
+end
 
+get '/name-picture' do
+  p params
+  @header = params[:header]
+  erb :image
 end

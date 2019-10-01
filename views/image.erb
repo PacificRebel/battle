@@ -9,7 +9,15 @@
       </style>
     </head>
     <body>
-        <center><h1> <%=@header%>  </h1>
+        <center>
+          <% if @header %>
+
+        <h1> <%=@header%>  </h1>
+           <% end %>
+          <form action="/name-picture">
+            <input type="text" name="header">
+            <input type="submit" value="Submit">
+          </form>
         <img src="https://bit.ly/2nSUiWj"/></center>
       </body>
   </html>
