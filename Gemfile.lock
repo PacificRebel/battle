@@ -10,7 +10,9 @@ GEM
       ast (~> 2.4.0)
     powerpack (0.1.2)
     rack (2.2.3)
-    rack-protection (2.2.0)
+dependabot/bundler/rack-2.2.3
+    rack-protection (2.0.7)
+
       rack
     rainbow (3.0.0)
     rspec (3.8.0)
